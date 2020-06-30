@@ -17,6 +17,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 let indexRouter = require('./routes/index')
 let usersRouter = require('./routes/users')
+let catalogRouter = require('./routes/catalog') // Add catalog routes to middleware chain.
 
 let app = express()
 
